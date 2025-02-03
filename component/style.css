@@ -1,0 +1,190 @@
+/* VARIABLES */
+:root {
+  --fondo: #f4e5de;
+  --titulo-principal: #2e2d28;
+  --titulos: #965727;
+  --textos: #4c482c;
+  --cuadro-morado: rgba(255, 176, 242, 0.1);
+  --texto-cuadro-morado: rgb(128, 6, 102);
+}
+
+/* ESTILOS GENERALES */
+body {
+  background-color: var(--fondo);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  margin-bottom: 7%;
+}
+
+section {
+  margin-top: 7%;
+  width: 55%;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5%;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: "Outfit";
+  color: var(--titulo-principal);
+  font-size: 3rem;
+}
+
+#content {
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+p {
+  color: var(--textos);
+  font-size: 1.1rem;
+}
+
+/* SECCION PREPARACION */
+#preparation {
+  font-family: "Young Serif", sans-serif;
+  background-color: var(--cuadro-morado);
+  color: var(--textos);
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+#prep {
+  color: var(--texto-cuadro-morado);
+  margin-left: 15px;
+  font-size: 1.4rem;
+}
+
+.prep-list {
+  padding-left: 25px;
+  margin-top: 15px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.prep-list li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+span {
+  display: inline-block;
+  min-width: 110px;
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+  font-family: "Young Serif", sans-serif;
+}
+
+/* SECCION INGREDIENTES */
+#ingredients {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  margin: 25px 0;
+}
+
+.tit {
+  color: var(--titulos);
+  font-size: 2rem;
+  font-family: "Young Serif", sans-serif;
+  margin-left: 0;
+  padding-left: 10px;
+}
+
+#ingredients ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+#ingredients li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  line-height: 1.5;
+  color: var(--textos);
+  text-indent: 23px;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+/* SECCION INSTRUCCIONES */
+#instructions ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+  margin-top: 15px;
+  color: var(--titulos);
+}
+
+#instructions li {
+  color: var(--textos);
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+#instructions span {
+  color: var(--titulos);
+  font-family: "Young Serif", sans-serif;
+}
+
+/* SECCION NUTRICION */
+#nutrition {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  margin: 25px 0;
+  padding-left: 10px;
+}
+
+#nutrition .tit {
+  color: var(--titulos);
+  font-size: 2rem;
+  font-family: "Young Serif", sans-serif;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#nutrition p {
+  margin-top: 10px;
+  color: var(--textos);
+  font-size: 1.1rem;
+  padding-left: 0;
+}
+
+#nutrition table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  color: var(--textos);
+}
+
+#nutrition td {
+  padding: 8px 0;
+  color: var(--textos);
+  border-bottom: 1px solid #eee;
+}
+
+/* para los header */
+
+#nutrition td:last-child{
+  color: var(--titulos);
+  font-weight: bold;
+}
