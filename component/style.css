@@ -13,13 +13,11 @@ body {
   background-color: var(--fondo);
   display: grid;
   place-items: center;
-  height: 100vh;
   margin: 0;
-  margin-bottom: 7%;
 }
 
 section {
-  margin-top: 7%;
+  margin: 7%;
   width: 55%;
   height: auto;
   background-color: white;
@@ -184,7 +182,7 @@ hr {
 
 /* para los header */
 
-#nutrition td:last-child{
+#nutrition td:last-child {
   color: var(--titulos);
   font-weight: bold;
 }
