@@ -1,10 +1,18 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("../component/assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+}
+
 /* VARIABLES */
 :root {
   --fondo: #f4e5de;
   --titulo-principal: #2e2d28;
   --titulos: #965727;
   --textos: #4c482c;
-  --cuadro-morado: rgba(255, 176, 242, 0.1);
+  --textos-claros: #757575;
+  --cuadro-morado: rgba(255, 176, 242, 0.2);
   --texto-cuadro-morado: rgb(128, 6, 102);
 }
 
@@ -38,7 +46,7 @@ img {
 }
 
 h1 {
-  font-family: "Outfit";
+  font-family: "Young Serif";
   color: var(--titulo-principal);
   font-size: 3rem;
 }
@@ -93,7 +101,7 @@ span {
 /* SECCION INGREDIENTES */
 #ingredients {
   width: 100%;
-  font-family: "Outfit", sans-serif;
+  font-family: "Young Serif", sans-serif;
   margin: 25px 0;
 }
 
@@ -117,7 +125,6 @@ span {
   padding-left: 15px;
   line-height: 1.5;
   color: var(--textos);
-  text-indent: 23px;
 }
 
 hr {
@@ -129,7 +136,6 @@ hr {
   list-style-type: decimal;
   padding-left: 25px;
   margin-top: 15px;
-  color: var(--titulos);
 }
 
 #instructions li {
@@ -139,15 +145,20 @@ hr {
   padding-left: 10px;
 }
 
-#instructions span {
+#instructions li::marker {
   color: var(--titulos);
+  font-weight: bold;
+}
+
+#instructions span {
+  color: var(--textos-claros);
   font-family: "Young Serif", sans-serif;
 }
 
 /* SECCION NUTRICION */
 #nutrition {
   width: 100%;
-  font-family: "Outfit", sans-serif;
+  font-family: "Young Serif", sans-serif;
   margin: 25px 0;
   padding-left: 10px;
 }
@@ -170,7 +181,7 @@ hr {
 #nutrition table {
   width: 100%;
   margin-top: 15px;
-  border-collapse: collapse; /* combina los bordes y elimina el espacio entre ellas */
+  border-collapse: collapse;
   color: var(--textos);
 }
 
@@ -180,203 +191,12 @@ hr {
   border-bottom: 1px solid #eee;
 }
 
-/* para los header */
-
-#nutrition td:last-child {
-  color: var(--titulos);
-  font-weight: bold;
-}
-/* VARIABLES */
-:root {
-  --fondo: #f4e5de;
-  --titulo-principal: #2e2d28;
-  --titulos: #965727;
-  --textos: #4c482c;
-  --cuadro-morado: rgba(255, 176, 242, 0.1);
-  --texto-cuadro-morado: rgb(128, 6, 102);
-}
-
-/* ESTILOS GENERALES */
-body {
-  background-color: var(--fondo);
-  display: grid;
-  place-items: center;
-  margin: 0;
-}
-
-section {
-  margin: 7%;
-  width: 55%;
-  height: auto;
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2.5%;
-  text-align: left;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-h1 {
-  font-family: "Outfit";
-  color: var(--titulo-principal);
-  font-size: 3rem;
-}
-
-#content {
-  width: 100%;
-  text-align: left;
-  padding-left: 15px;
-}
-
-p {
-  color: var(--textos);
-  font-size: 1.1rem;
-}
-
-/* SECCION PREPARACION */
-#preparation {
-  font-family: "Young Serif", sans-serif;
-  background-color: var(--cuadro-morado);
-  color: var(--textos);
-  padding: 25px;
-  margin: 20px 0;
-  border-radius: 12px;
-}
-
-#prep {
-  color: var(--texto-cuadro-morado);
-  margin-left: 15px;
-  font-size: 1.4rem;
-}
-
-.prep-list {
-  padding-left: 25px;
-  margin-top: 15px;
-  list-style-type: disc;
-  list-style-position: outside;
-}
-
-.prep-list li {
-  margin-bottom: 10px;
-  padding-left: 15px;
-}
-
-span {
-  display: inline-block;
-  min-width: 110px;
-  color: rgb(98, 98, 98);
-  font-weight: bold;
-  font-family: "Young Serif", sans-serif;
-}
-
-/* SECCION INGREDIENTES */
-#ingredients {
-  width: 100%;
-  font-family: "Outfit", sans-serif;
-  margin: 25px 0;
-}
-
-.tit {
-  color: var(--titulos);
-  font-size: 2rem;
-  font-family: "Young Serif", sans-serif;
-  margin-left: 0;
-  padding-left: 10px;
-}
-
-#ingredients ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 25px;
-  margin-top: 15px;
-}
-
-#ingredients li {
-  margin-bottom: 10px;
-  padding-left: 15px;
-  line-height: 1.5;
-  color: var(--textos);
-  text-indent: 23px;
-}
-
-hr {
-  margin-top: 40px;
-}
-
-/* SECCION INSTRUCCIONES */
-#instructions ol {
-  list-style-type: decimal;
-  padding-left: 25px;
-  margin-top: 15px;
-  color: var(--titulos);
-}
-
-#instructions li {
-  color: var(--textos);
-  margin-bottom: 15px;
-  line-height: 1.5;
-  padding-left: 10px;
-}
-
-#instructions span {
-  color: var(--titulos);
-  font-family: "Young Serif", sans-serif;
-}
-
-/* SECCION NUTRICION */
-#nutrition {
-  width: 100%;
-  font-family: "Outfit", sans-serif;
-  margin: 25px 0;
-  padding-left: 10px;
-}
-
-#nutrition .tit {
-  color: var(--titulos);
-  font-size: 2rem;
-  font-family: "Young Serif", sans-serif;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-#nutrition p {
-  margin-top: 10px;
-  color: var(--textos);
-  font-size: 1.1rem;
-  padding-left: 0;
-}
-
-#nutrition table {
-  width: 100%;
-  margin-top: 15px;
-  border-collapse: collapse; /* combina los bordes y elimina el espacio entre ellas */
-  color: var(--textos);
-}
-
-#nutrition td {
-  padding: 8px 0;
-  color: var(--textos);
-  border-bottom: 1px solid #eee;
-}
-
-/* para los header */
-
 #nutrition td:last-child {
   color: var(--titulos);
   font-weight: bold;
 }
 
-/* pantalla medianona */
-/* @media es un if, que si el ancho maximo es menor o igual q 1024 pixeles, se aplica ese show, haciendolo responsivo el show */
+/* SECCION RESPONSIVE */
 @media (max-width: 1024px) {
   section {
     width: 75%;
@@ -422,8 +242,6 @@ hr {
   }
 }
 
-/* MODIFICA ESTE */
-
 @media screen and (max-width: 768px) {
   section {
     width: 85%;
@@ -450,5 +268,61 @@ hr {
 
   #nutrition table {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  #content {
+    width: 90%;
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .tit {
+    font-size: 1.4rem;
+  }
+
+  #prep {
+    font-size: 1rem;
+  }
+
+  #nutrition table {
+    font-size: 0.8rem;
   }
 }
